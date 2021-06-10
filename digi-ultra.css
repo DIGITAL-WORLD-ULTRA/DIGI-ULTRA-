@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+[data-digi-content-center-flex]{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+[data-digi-content-center-grid]{
+	display: grid;
+	place-items: center;
+}
+[data-digi-this-center]{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+[data-digi-item-align-center]{margin: 0 auto;}
+[data-didgi-text-center]{text-align: center;}
+[data-digi-rush-to-right-btn]{
+	text-decoration: none;
+	color: black;
+	padding: 20px 25px;
+	font-family: sans-serif;
+	border: 1.5px solid #000;
+	text-transform: uppercase;
+	font-size: 25px;
+	position: relative;
+	overflow: hidden;
+}
+[data-digi-rush-to-right-btn]::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	transform: translateX(-100%);
+	transition: 0.5s linear;
+	z-index: -1;
+}
+[data-digi-rush-to-right-btn]:hover::before{
+	transform: translateX(0);
+}
+[data-digi-rush-to-right-btn]:hover{color: white;}
+[data-digi-circle]{border-radius: 50%;}
+[data-digi-neon-btn]{
+	text-decoration: none;
+	color: #21ebff;
+	padding: 20px 25px;
+	font-family: sans-serif;
+	/* border: 1.5px solid #000; */
+	text-transform: uppercase;
+	font-size: 25px;
+	position: relative;
+	overflow: hidden;
+}
+[data-digi-neon-btn]:hover{
+	color: #000;
+	background: #21ebff;
+	border: .02px solid #000;
+	box-shadow: 0 0 10px #21ebff,
+				0 0 20px #21ebff,
+				0 0 30px #21ebff,
+				0 0 40px #21ebff;
+}
+[data-digi-rush-to-left-btn]{
+	text-decoration: none;
+	color: black;
+	padding: 20px 25px;
+	font-family: sans-serif;
+	border: 1.5px solid #000;
+	text-transform: uppercase;
+	font-size: 25px;
+	position: relative;
+	overflow: hidden;
+}
+[data-digi-rush-to-left-btn]::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	transform: translateX(100%);
+	transition: 0.5s linear;
+	z-index: -1;
+}
+[data-digi-rush-to-left-btn]:hover::before{
+	transform: translateX(0);
+}
+[data-digi-rush-to-left-btn]:hover{color: #fff;}
+[data-digi-rush-to-top-btn]{
+	text-decoration: none;
+	color: black;
+	padding: 20px 25px;
+	font-family: sans-serif;
+	border: 1.5px solid #000;
+	text-transform: uppercase;
+	font-size: 25px;
+	position: relative;
+	overflow: hidden;
+}
+[data-digi-rush-to-top-btn]::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	transform: translateY(100%);
+	transition: 0.5s linear;
+	z-index: -1;
+}
+[data-digi-rush-to-top-btn]:hover::before{
+	transform: translateX(0);
+}
+[data-digi-rush-to-top-btn]:hover{color: white;}
+[data-digi-rush-to-bottom-btn]{
+	text-decoration: none;
+	color: black;
+	padding: 20px 25px;
+	font-family: sans-serif;
+	border: 1.5px solid #000;
+	text-transform: uppercase;
+	font-size: 25px;
+	position: relative;
+	overflow: hidden;
+}
+[data-digi-rush-to-bottom-btn]::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	transform: translateY(-100%);
+	transition: 0.5s linear;
+	z-index: -1;
+}
+[data-digi-rush-to-bottom-btn]:hover::before{
+	transform: translateX(0);
+}
+[data-digi-rush-to-bottom-btn]:hover{color: white;}
+[data-digi-header]{
+	height: 100vh;
+	width: 100vw;
+}
+[data-digi-italic]{
+	font-style: italic;
+}
+[data-digi-bold]{
+	font-weight: bold;
+}
+[data-digi-bold-italic],[data-digi-italic-bold]{
+	font-style: italic;
+	font-weight: bold;
+}
+[data-digi-hexagon]{
+	clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+[data-digi-left-arrow]{
+	clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+[data-digi-trapezoid]{
+	clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+[data-digi-pentagon]{
+	clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+[data-digi-nanogon]{
+	clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+blockquote{
+	border-left: 10px solid rgb(0, 255, 255);
+	padding-left: 10px;
+	word-wrap: break-word;
+}
+blockquote footer{
+	color: rgb(200, 200, 255);
+	font-style: italic;
+}
+[data-digi-family-popppins]{
+	font-family: poppins;
+}
+code{
+	background: yellow;
+	color: red;
+	font-family: monospace;
+}
+highlight{
+	background: green;
+	color: blue;
+	font-family: poppins;
+	border: 1px solid #000;
+}
